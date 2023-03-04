@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from math import log, sqrt, sin, pi
+from math import pi
 import matplotlib.pyplot as pyp
 
 
@@ -32,4 +32,7 @@ def plot_sig(freq: float, ampl: float, n: int, pts: int, periodes: int, f):
     pyp.ylabel("tension")
     pyp.show()
 
-plot_sig(100, 2, 100, 1000, 2, carre)
+if __name__ == "__main__":
+    from math import log, sqrt, sin, pi
+    import matplotlib.pyplot as pyp
+    plot_sig(100, 2, 100, 1000, 2, carre)
